@@ -1,6 +1,8 @@
 import { PageContainer } from '@/components/page-container'
 import { Text } from '@/components/text'
 import { Button } from '@/components/button'
+import Users from './users'
+import { Suspense } from 'react'
 
 export default function Home() {
   return (
@@ -11,10 +13,15 @@ export default function Home() {
           Adiós
         </Text>
       </div>
+
       <div className="flex gap-1 justify-center align-middle">
         <Button>Primary</Button>
         <Button type="secondary">Secondary</Button>
       </div>
+
+      <Suspense>
+        <Users />
+      </Suspense>
     </PageContainer>
   )
 }
