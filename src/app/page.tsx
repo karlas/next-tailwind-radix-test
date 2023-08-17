@@ -3,6 +3,7 @@ import { Text } from '@/components/text'
 import { Button } from '@/components/button'
 import Users from './users'
 import { Suspense } from 'react'
+import { Popover } from "@/components/popover";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <div className="flex gap-1 justify-center align-middle">
         <Button>Primary</Button>
         <Button type="secondary">Secondary</Button>
+        <Popover></Popover>
       </div>
 
       <Suspense>
