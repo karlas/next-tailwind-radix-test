@@ -1,0 +1,154 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: 700;
+  transition: all 240ms ease-in-out;
+  border-radius: 4px;
+}
+
+.root:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px #7E3DFF7A;
+}
+
+.regular {}
+
+.regular:hover {
+  box-shadow: none;
+}
+
+.regular:active,
+.regular[data-expanded] {
+  box-shadow: none;
+}
+
+.accent {}
+
+.accent:hover {
+  box-shadow: 0 2px 4px #11131814, 0 4px 8px #11131814;
+}
+
+.accent:active,
+.accent[data-expanded] {
+  box-shadow: 0 4px 8px #11131814, 0 8px 16px #11131814;
+}
+
+.primary {
+  color: #4E00EB;
+  background-color: transparent;
+}
+
+.primary:hover,
+.primary:focus-visible {
+  color: #330099;
+  background-color: #F5F0FF;
+}
+
+.primary:active,
+.primary[data-expanded] {
+  color: #330099;
+  background-color: #DAC7FF;
+}
+
+.primaryAccent {
+  color: #FFFFFF;
+  background-color: #4E00EB;
+}
+
+.primaryAccent:hover,
+.primaryAccent:focus-visible {
+  color: #FFFFFF;
+  background-color: #330099;
+}
+
+.primaryAccent:active,
+.primaryAccent[data-expanded] {
+  color: #FFFFFF;
+  background-color: #7E3DFF;
+}
+
+.neutral {
+  color: #465063;
+  background-color: transparent;
+}
+
+.neutral:hover,
+.neutral:focus-visible {
+  color: #111318;
+  background-color: #F0F2F4;
+}
+
+.neutral:active,
+.neutral[data-expanded] {
+  color: #111318;
+  background-color: #CFD4DD;
+}
+
+.neutralAccent {
+  color: #465063;
+  background-color: #F0F2F4;
+}
+
+.neutralAccent:hover,
+.neutralAccent:focus-visible {
+  color: #111318;
+  background-color: #CFD4DD;
+}
+
+.neutralAccent:active,
+.neutralAccent[data-expanded] {
+  color: #111318;
+  background-color: #687692;
+}
+
+.destructive {
+  color: #C71100;
+  background-color: transparent;
+}
+
+.destructive:hover,
+.destructive:focus-visible {
+  color: #750A00;
+  background-color: #FFE3E0;
+}
+
+.destructive:active,
+.destructive[data-expanded] {
+  color: #750A00;
+  background-color: #FFA69E;
+}
+
+.destructiveAccent {
+  color: #FFFFFF;
+  background-color: #C71100;
+}
+
+.destructiveAccent:hover,
+.destructive:focus-visible {
+  color: #FFFFFF;
+  background-color: #750A00;
+}
+
+.destructiveAccent:active,
+.destructiveAccent[data-expanded] {
+  color: #FFFFFF;
+  background-color: #FFA69E;
+}
+
+.small {
+  gap: 4px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .21px;
+}
+
+.medium {
+  gap: 8px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .24px;
+}

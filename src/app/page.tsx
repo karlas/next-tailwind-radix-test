@@ -1,9 +1,9 @@
-import { PageContainer } from '@/components/page-container'
-import { Text } from '@/components/text'
-import { Button } from '@/components/button'
+import {PageContainer} from '@/components/page-container'
+import {Text} from '@/components/text'
 import Users from './users'
-import { Suspense } from 'react'
-import { Popover } from "@/components/popover";
+import {Suspense} from 'react'
+import {Popover} from "@/components/popover";
+import {Buttons} from "@/app/buttons";
 
 export default function Home() {
   return (
@@ -14,15 +14,12 @@ export default function Home() {
           Adiós
         </Text>
       </div>
-
+      <Buttons />
       <div className="flex gap-1 justify-center align-middle">
-        <Button>Primary</Button>
-        <Button type="secondary">Secondary</Button>
         <Popover></Popover>
       </div>
-
       <Suspense>
-        <Users />
+        <Users/>
       </Suspense>
     </PageContainer>
   )
